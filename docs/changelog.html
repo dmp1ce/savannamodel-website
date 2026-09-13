@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Savanna Model - Changelog</title>
+        <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
+    </head>
+    <body>
+        <header class="ui segment">
+            <div class="ui container">
+            <div class="ui three item borderless menu">
+                <a class="item" href="./">Savanna Model</a>
+                <a class="item" href="./foods.html">Foods</a>
+                <a class="item" href="./about.html">About</a>
+            </div>
+            </div>
+        </header>
+
+        <main role="main">
+            <p>All notable changes to this website are documented here.</p>
+<p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>
+and versions follow <a href="https://semver.org/">Semantic Versioning</a>: MAJOR for
+redesigns, MINOR for new features, PATCH for fixes and content updates.</p>
+<h2 id="section">[2.0.0] - 2026-09-13</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>This changelog page, linked from the site footer.</li>
+<li>A site version in the footer (single source of truth: the <code>VERSION</code> file in
+the <a href="https://github.com/dmp1ce/savannamodel-hakyll">builder repository</a>).</li>
+<li>Automated build and deployment: pushing to the builder repository now
+builds and publishes the site automatically via GitHub Actions.</li>
+<li>Automated <code>package-lock.json</code> regeneration as part of deployment.</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Upgraded Hakyll from 4.12.5.2 to 4.17.0.0 (Stackage LTS 24.58, GHC 9.10.3).</li>
+<li>Upgraded Fomantic UI (Semantic UI) from 2.8.4 to 2.9.4.</li>
+<li>Removed jQuery — the site only uses the CSS framework.</li>
+</ul>
+<h3 id="published">Published</h3>
+<ul>
+<li>Content changes from 2020–2022 that had never been manually deployed are
+now live: new foods (pineapple, watermelon, tahini) with quotes, and
+low-fructose high-glycemic fruits moved from Green-Yellow to Yellow.</li>
+</ul>
+<h2 id="section-1">[1.0.0] - 2018-10-21</h2>
+<ul>
+<li>Initial Hakyll-based website for the Savanna Model lifestyle, based on
+Geoff Bond’s <em>Deadly Harvest</em> and <em>Paleo in a Nutshell</em>.</li>
+<li>Food classification system with six color tiers (Green-Green “Superfoods”
+through Red “Shun”), hundreds of food pages, and book quotes linked to each
+food.</li>
+<li>Fomantic UI (Semantic UI) frontend.</li>
+</ul>
+        </main>
+
+        <footer class="ui segment">
+            <div class="ui text center aligned container">
+            <p>Savanna Model v2.0.0 — see the <a href="./changelog.html">changelog</a> for what changed.</p>
+            <p>Site proudly generated with
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+            and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>
