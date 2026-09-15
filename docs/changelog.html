@@ -23,8 +23,17 @@
 <p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>
 and versions follow <a href="https://semver.org/">Semantic Versioning</a>: MAJOR for
 redesigns, MINOR for new features, PATCH for fixes and content updates.</p>
-<h2 id="section">[2.0.3] - 2026-09-15</h2>
+<h2 id="section">[2.0.4] - 2026-09-15</h2>
 <h3 id="fixed">Fixed</h3>
+<ul>
+<li>29 more food pages still had broken <code>1024px</code> Wikimedia thumbnails. The
+v2.0.2 fix pipeline only re-tested URLs the audit had marked <em>dead</em>,
+silently skipping the ones the audit flagged as <em>fixable</em> (broken size
+but a working standard size exists). All rewritten to working sizes,
+and the resolver now processes fixable entries too.</li>
+</ul>
+<h2 id="section-1">[2.0.3] - 2026-09-15</h2>
+<h3 id="fixed-1">Fixed</h3>
 <ul>
 <li>The eight food pages written as Markdown (<code>.md</code>) were missed by the
 v2.0.2 image audit and still had broken 1024px Wikimedia links —
@@ -32,8 +41,8 @@ Brussels sprouts, broccoli, cabbages, Swiss chard, beet greens
 (image removed: dead hotlink), eggs, and lard. The audit tooling now
 scans <code>*.md</code> as well as <code>*.html</code>.</li>
 </ul>
-<h2 id="section-1">[2.0.2] - 2026-09-14</h2>
-<h3 id="fixed-1">Fixed</h3>
+<h2 id="section-2">[2.0.2] - 2026-09-14</h2>
+<h3 id="fixed-2">Fixed</h3>
 <ul>
 <li>Food page images: Wikimedia Commons now only serves standardized
 thumbnail sizes (500/960/1280/1920px), so all <code>1024px-</code> hotlinks
@@ -47,15 +56,15 @@ Internal links are blocking; external checks are report-only since
 Wikimedia rate-limits datacenter IPs.</li>
 <li>Removed 6 dead image attribution links (image_source) to 404/403 pages.</li>
 </ul>
-<h2 id="section-2">[2.0.1] - 2026-09-13</h2>
-<h3 id="fixed-2">Fixed</h3>
+<h2 id="section-3">[2.0.1] - 2026-09-13</h2>
+<h3 id="fixed-3">Fixed</h3>
 <ul>
 <li>Corrected 15 quote citations (11 wrong page numbers, 4 attributed to the
 wrong book) using automated verification of every quote against the
 extracted text of both books. A handful of quotes that span a page break
 remain flagged for manual review in the builder workspace.</li>
 </ul>
-<h2 id="section-3">[2.0.0] - 2026-09-13</h2>
+<h2 id="section-4">[2.0.0] - 2026-09-13</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>This changelog page, linked from the site footer.</li>
@@ -77,7 +86,7 @@ builds and publishes the site automatically via GitHub Actions.</li>
 now live: new foods (pineapple, watermelon, tahini) with quotes, and
 low-fructose high-glycemic fruits moved from Green-Yellow to Yellow.</li>
 </ul>
-<h2 id="section-4">[1.0.0] - 2018-10-21</h2>
+<h2 id="section-5">[1.0.0] - 2018-10-21</h2>
 <ul>
 <li>Initial Hakyll-based website for the Savanna Model lifestyle, based on
 Geoff Bond’s <em>Deadly Harvest</em> and <em>Paleo in a Nutshell</em>.</li>
@@ -90,7 +99,7 @@ food.</li>
 
         <footer class="ui segment">
             <div class="ui text center aligned container">
-            <p>Savanna Model v2.0.3 — see the <a href="./changelog.html">changelog</a> for what changed.</p>
+            <p>Savanna Model v2.0.4 — see the <a href="./changelog.html">changelog</a> for what changed.</p>
             <p>Site proudly generated with
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
             and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>
