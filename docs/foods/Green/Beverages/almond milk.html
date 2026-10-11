@@ -6,13 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Savanna Model - Almond Milk</title>
         <link rel="stylesheet" type="text/css" href="../../../semantic/dist/semantic.min.css">
+        <style>
+            details.quote {
+                margin: 0.5em 0;
+                padding: 0.5em 1em;
+                border: 1px solid rgba(34,36,38,.15);
+                border-radius: .28571429rem;
+            }
+            details.quote > summary.quote-citation {
+                cursor: pointer;
+                font-style: italic;
+            }
+            details.quote[open] > summary.quote-citation {
+                margin-bottom: 0.5em;
+            }
+            .quote-entry .quote-citation {
+                color: rgba(0,0,0,.6);
+                font-style: italic;
+            }
+            .quote-foods {
+                margin-top: 0.5em;
+            }
+            .quote-foods .ui.label {
+                margin-right: 0.3em;
+            }
+        </style>
     </head>
     <body>
         <header class="ui segment">
             <div class="ui container">
-            <div class="ui three item borderless menu">
+            <div class="ui four item borderless menu">
                 <a class="item" href="../../../">Savanna Model</a>
                 <a class="item" href="../../../foods.html">Foods</a>
+                <a class="item" href="../../../sources.html">Sources</a>
                 <a class="item" href="../../../about.html">About</a>
             </div>
             </div>
@@ -36,33 +62,37 @@
 <h2>Category Quotes</h2>
 <p>Guideline related quotes related to <b>Beverages and Green</b> throughout Geoff Bond's publications.</p>
 
-<p>
-    <i>One cup is one serving of water, milk, or nut milk.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.95
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-95-group12-serving-size">Paleo in a Nutshell — 5. Adopting the Paleo Feeding Pattern, p. 95</a></summary>
+    <p><i>One cup is one serving of water, milk, or nut milk.</i>
 </p>
+</details>
 
-<p>
-    <i>Focus on “Green” and “ Green-Amber” beverages.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.98
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-103-stage3-group12-recommendation">Paleo in a Nutshell — 5. Adopting the Paleo Feeding Pattern, p. 98</a></summary>
+    <p><i>Focus on “Green” and “ Green-Amber” beverages.</i>
 </p>
+</details>
 
 
 
-    <p>
-    <h2>Additional Quotes</h2>
-    <p>Specific references to <b>Almond Milk</b> throughout Geoff Bond's publications.</p>
     
-    <p>
-        <i>Do not forget that tea, herbal teas, and coffee are valid thirst quenchers. Cocoa is fine too, but make it with 100 percent cocoa powder (not chocolate mix) combined with water or almond milk. If you like, use a "Green" sweetener or honey.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.80
-    </p>
-    
-    <p>
-        <i>Milk is simply not human food and is harmful to our biochemistry. The milk of almonds (and other nuts) is a great alternative to regular milk, particularly in cookery. However, soy milk must be avoided. Fruit juices, even when freshly made, are glycemic— for this reason, they get the "Amber" classification. It is much better to eat the fruit itself. Watch out for tomato juice: Choose brands that are made from pure tomatoes and have no salt. Sugar-sweetened carbonated drinks and colas are high-glycemic and disrupt bone building.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.81
-    </p>
-    
+<h2>Additional Quotes</h2>
+<p>Specific references to <b>Almond Milk</b> throughout Geoff Bond's publications.</p>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-80-tea-and-almond-milk">Paleo in a Nutshell — 4. The Owner's Manual, p. 80</a></summary>
+    <p><i>Do not forget that tea, herbal teas, and coffee are valid thirst quenchers. Cocoa is fine too, but make it with 100 percent cocoa powder (not chocolate mix) combined with water or almond milk. If you like, use a "Green" sweetener or honey.</i>
 </p>
+</details>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-81-various-beverages">Paleo in a Nutshell — 4. The Owner's Manual, p. 81</a></summary>
+    <p><i>Milk is simply not human food and is harmful to our biochemistry. The milk of almonds (and other nuts) is a great alternative to regular milk, particularly in cookery. However, soy milk must be avoided. Fruit juices, even when freshly made, are glycemic— for this reason, they get the "Amber" classification. It is much better to eat the fruit itself. Watch out for tomato juice: Choose brands that are made from pure tomatoes and have no salt. Sugar-sweetened carbonated drinks and colas are high-glycemic and disrupt bone building.</i>
+</p>
+</details>
+
+
 
 
     
@@ -72,7 +102,7 @@
 
         <footer class="ui segment">
             <div class="ui text center aligned container">
-            <p>Savanna Model v2.0.5 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
+            <p>Savanna Model v2.0.6 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
             <p>Site proudly generated with
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
             and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>

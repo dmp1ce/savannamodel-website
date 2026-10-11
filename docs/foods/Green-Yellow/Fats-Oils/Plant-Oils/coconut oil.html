@@ -6,13 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Savanna Model - Coconut oil</title>
         <link rel="stylesheet" type="text/css" href="../../../../semantic/dist/semantic.min.css">
+        <style>
+            details.quote {
+                margin: 0.5em 0;
+                padding: 0.5em 1em;
+                border: 1px solid rgba(34,36,38,.15);
+                border-radius: .28571429rem;
+            }
+            details.quote > summary.quote-citation {
+                cursor: pointer;
+                font-style: italic;
+            }
+            details.quote[open] > summary.quote-citation {
+                margin-bottom: 0.5em;
+            }
+            .quote-entry .quote-citation {
+                color: rgba(0,0,0,.6);
+                font-style: italic;
+            }
+            .quote-foods {
+                margin-top: 0.5em;
+            }
+            .quote-foods .ui.label {
+                margin-right: 0.3em;
+            }
+        </style>
     </head>
     <body>
         <header class="ui segment">
             <div class="ui container">
-            <div class="ui three item borderless menu">
+            <div class="ui four item borderless menu">
                 <a class="item" href="../../../../">Savanna Model</a>
                 <a class="item" href="../../../../foods.html">Foods</a>
+                <a class="item" href="../../../../sources.html">Sources</a>
                 <a class="item" href="../../../../about.html">About</a>
             </div>
             </div>
@@ -38,33 +64,37 @@
 <h2>Category Quotes</h2>
 <p>Guideline related quotes related to <b>Fats-Oils, Plant-Oils and Green-Yellow</b> throughout Geoff Bond's publications.</p>
 
-<p>
-    <i>Certain saturated fats derived from plants, like coconut oil and cocoa butter, have become a fetish consumption by some health mavens. Actually, none of these fats was common in our savanna environment but, by a quirk of triglyceride biochemistry, their palmitic and myristic acids (the harmful fatty acids found in saturated fats) are not readily bioavailable. This means they are not readily taken in by the body. As a result, they do not have the devastating effect on our biochemistry that those fats of animal origin do.</i>
- ~<a href="../../../../about.html">Paleo in a Nutshell</a> p.41
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../../sources.html#pian-41-saturated-fats-plant-origin">Paleo in a Nutshell — 3. How Did It Go Wrong?, p. 41</a></summary>
+    <p><i>Certain saturated fats derived from plants, like coconut oil and cocoa butter, have become a fetish consumption by some health mavens. Actually, none of these fats was common in our savanna environment but, by a quirk of triglyceride biochemistry, their palmitic and myristic acids (the harmful fatty acids found in saturated fats) are not readily bioavailable. This means they are not readily taken in by the body. As a result, they do not have the devastating effect on our biochemistry that those fats of animal origin do.</i>
 </p>
+</details>
 
 
 
-    <p>
-    <h2>Additional Quotes</h2>
-    <p>Specific references to <b>Coconut oil</b> throughout Geoff Bond's publications.</p>
     
-    <p>
-        <i>Certain saturated fats derived from plants, like coconut oil and cocoa butter, have become a fetish consumption by some health mavens. Actually, none of these fats was common in our savanna environment but, by a quirk of triglyceride biochemistry, their palmitic and myristic acids (the harmful fatty acids found in saturated fats) are not readily bioavailable. This means they are not readily taken in by the body. As a result, they do not have the devastating effect on our biochemistry that those fats of animal origin do.</i>
- ~<a href="../../../../about.html">Paleo in a Nutshell</a> p.41
-    </p>
-    
-    <p>
-        <i>That is to say, the position of these fatty acids on the glycerol molecule is an important factor. In this way, for exam­ple, cocoa butter and coconut oil and butter have a more favorable category than a simple examination of their saturated fat content would have predicted. In all cases, fats and oils should be consumed with restraint</i>
- ~<a href="../../../../about.html">Paleo in a Nutshell</a> p.74
-    </p>
-    
-    <p>
-        <i>Examples of one serving include 1 teaspoon margarine; 1 tablespoon mayonnaise or spread; 1 teaspoon canola, vegetable, olive, fish, coconut, etc. oil.</i>
- ~<a href="../../../../about.html">Paleo in a Nutshell</a> p.95
-    </p>
-    
+<h2>Additional Quotes</h2>
+<p>Specific references to <b>Coconut oil</b> throughout Geoff Bond's publications.</p>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../../sources.html#pian-41-saturated-fats-plant-origin">Paleo in a Nutshell — 3. How Did It Go Wrong?, p. 41</a></summary>
+    <p><i>Certain saturated fats derived from plants, like coconut oil and cocoa butter, have become a fetish consumption by some health mavens. Actually, none of these fats was common in our savanna environment but, by a quirk of triglyceride biochemistry, their palmitic and myristic acids (the harmful fatty acids found in saturated fats) are not readily bioavailable. This means they are not readily taken in by the body. As a result, they do not have the devastating effect on our biochemistry that those fats of animal origin do.</i>
 </p>
+</details>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../../sources.html#pian-74-coconut-oil-satfat">Paleo in a Nutshell — 4. The Owner's Manual, p. 74</a></summary>
+    <p><i>That is to say, the position of these fatty acids on the glycerol molecule is an important factor. In this way, for exam­ple, cocoa butter and coconut oil and butter have a more favorable category than a simple examination of their saturated fat content would have predicted. In all cases, fats and oils should be consumed with restraint</i>
+</p>
+</details>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../../sources.html#pian-95-group9-serving-size">Paleo in a Nutshell — 5. Adopting the Paleo Feeding Pattern, p. 95</a></summary>
+    <p><i>Examples of one serving include 1 teaspoon margarine; 1 tablespoon mayonnaise or spread; 1 teaspoon canola, vegetable, olive, fish, coconut, etc. oil.</i>
+</p>
+</details>
+
+
 
 
     
@@ -77,7 +107,7 @@
 
         <footer class="ui segment">
             <div class="ui text center aligned container">
-            <p>Savanna Model v2.0.5 — see the <a href="../../../../changelog.html">changelog</a> for what changed.</p>
+            <p>Savanna Model v2.0.6 — see the <a href="../../../../changelog.html">changelog</a> for what changed.</p>
             <p>Site proudly generated with
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
             and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>

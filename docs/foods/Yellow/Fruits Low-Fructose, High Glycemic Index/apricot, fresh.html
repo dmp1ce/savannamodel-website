@@ -6,13 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Savanna Model - Apricot, fresh</title>
         <link rel="stylesheet" type="text/css" href="../../../semantic/dist/semantic.min.css">
+        <style>
+            details.quote {
+                margin: 0.5em 0;
+                padding: 0.5em 1em;
+                border: 1px solid rgba(34,36,38,.15);
+                border-radius: .28571429rem;
+            }
+            details.quote > summary.quote-citation {
+                cursor: pointer;
+                font-style: italic;
+            }
+            details.quote[open] > summary.quote-citation {
+                margin-bottom: 0.5em;
+            }
+            .quote-entry .quote-citation {
+                color: rgba(0,0,0,.6);
+                font-style: italic;
+            }
+            .quote-foods {
+                margin-top: 0.5em;
+            }
+            .quote-foods .ui.label {
+                margin-right: 0.3em;
+            }
+        </style>
     </head>
     <body>
         <header class="ui segment">
             <div class="ui container">
-            <div class="ui three item borderless menu">
+            <div class="ui four item borderless menu">
                 <a class="item" href="../../../">Savanna Model</a>
                 <a class="item" href="../../../foods.html">Foods</a>
+                <a class="item" href="../../../sources.html">Sources</a>
                 <a class="item" href="../../../about.html">About</a>
             </div>
             </div>
@@ -35,21 +61,23 @@
 
 
 
-    <p>
-    <h2>Additional Quotes</h2>
-    <p>Specific references to <b>Apricot, fresh</b> throughout Geoff Bond's publications.</p>
     
-    <p>
-        <i>You should treat dried fruit (raisins, currants, dates, figs, apricots, peaches, etc.) as sugars. The drying process destroys some of the micronutrients, so in no way can dried fruit be a substitute for the fresh variety. In addition, we do not recommend that you liquidize fruits. Juicing, pasteurizing, concentrating, and reconstituting are processes that destroy the nature and utility of the natural fibers, strip out the nutrients, and increase the glycemic index.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.66
-    </p>
-    
-    <p>
-        <i>As biologist-historian Jared Diamond points out, only a few varieties of plants in the world lend themselves to being farmed and the farmer had little choice but to focus his efforts on those few. This practical reality greatly reduces the variety of foods eaten. So, it was for our first planters in Kurdistan. Instead of consuming plants from the hundreds of wild, foraged species, the farmers' diet was now limited mostly to just four farmed species— wheat, barley, lentils, and beans. As the centuries rolled by, farmers gradually domesticated some fruits (such as apricot and apple) and vegetables (such as onion and leeks), but they remained a tiny part of the diet.</i>
- ~<a href="../../../about.html">Deadly Harvest</a> p.31
-    </p>
-    
+<h2>Additional Quotes</h2>
+<p>Specific references to <b>Apricot, fresh</b> throughout Geoff Bond's publications.</p>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-66-dried-fruit-warning">Paleo in a Nutshell — 4. The Owner's Manual, p. 66</a></summary>
+    <p><i>You should treat dried fruit (raisins, currants, dates, figs, apricots, peaches, etc.) as sugars. The drying process destroys some of the micronutrients, so in no way can dried fruit be a substitute for the fresh variety. In addition, we do not recommend that you liquidize fruits. Juicing, pasteurizing, concentrating, and reconstituting are processes that destroy the nature and utility of the natural fibers, strip out the nutrients, and increase the glycemic index.</i>
 </p>
+</details>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#dh-31-farming-history">Deadly Harvest — 2. The Farming Revolution and Its Consequences, p. 31</a></summary>
+    <p><i>As biologist-historian Jared Diamond points out, only a few varieties of plants in the world lend themselves to being farmed and the farmer had little choice but to focus his efforts on those few. This practical reality greatly reduces the variety of foods eaten. So, it was for our first planters in Kurdistan. Instead of consuming plants from the hundreds of wild, foraged species, the farmers' diet was now limited mostly to just four farmed species— wheat, barley, lentils, and beans. As the centuries rolled by, farmers gradually domesticated some fruits (such as apricot and apple) and vegetables (such as onion and leeks), but they remained a tiny part of the diet.</i>
+</p>
+</details>
+
+
 
 
     
@@ -62,7 +90,7 @@
 
         <footer class="ui segment">
             <div class="ui text center aligned container">
-            <p>Savanna Model v2.0.5 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
+            <p>Savanna Model v2.0.6 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
             <p>Site proudly generated with
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
             and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>

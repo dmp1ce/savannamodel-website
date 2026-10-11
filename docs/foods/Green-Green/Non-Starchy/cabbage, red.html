@@ -6,13 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Savanna Model - Cabbage, red</title>
         <link rel="stylesheet" type="text/css" href="../../../semantic/dist/semantic.min.css">
+        <style>
+            details.quote {
+                margin: 0.5em 0;
+                padding: 0.5em 1em;
+                border: 1px solid rgba(34,36,38,.15);
+                border-radius: .28571429rem;
+            }
+            details.quote > summary.quote-citation {
+                cursor: pointer;
+                font-style: italic;
+            }
+            details.quote[open] > summary.quote-citation {
+                margin-bottom: 0.5em;
+            }
+            .quote-entry .quote-citation {
+                color: rgba(0,0,0,.6);
+                font-style: italic;
+            }
+            .quote-foods {
+                margin-top: 0.5em;
+            }
+            .quote-foods .ui.label {
+                margin-right: 0.3em;
+            }
+        </style>
     </head>
     <body>
         <header class="ui segment">
             <div class="ui container">
-            <div class="ui three item borderless menu">
+            <div class="ui four item borderless menu">
                 <a class="item" href="../../../">Savanna Model</a>
                 <a class="item" href="../../../foods.html">Foods</a>
+                <a class="item" href="../../../sources.html">Sources</a>
                 <a class="item" href="../../../about.html">About</a>
             </div>
             </div>
@@ -38,33 +64,37 @@
 <h2>Category Quotes</h2>
 <p>Guideline related quotes related to <b>Non-Starchy and Green-Green</b> throughout Geoff Bond's publications.</p>
 
-<p>
-    <i>Eat at least 2 3/4 lbs of mixed salad and vegetables per day, consisting of "Green-Green” and “Green” foods. Of these, at least 3/4 lb should be mixed salad. Also include at least 5 cups of “Green-Green” leafy vegetables or 2 1/2 cups of other vegetables per week.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.102
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-102-green-salad">Paleo in a Nutshell — 5. Adopting the Paleo Feeding Pattern, p. 102</a></summary>
+    <p><i>Eat at least 2 3/4 lbs of mixed salad and vegetables per day, consisting of "Green-Green” and “Green” foods. Of these, at least 3/4 lb should be mixed salad. Also include at least 5 cups of “Green-Green” leafy vegetables or 2 1/2 cups of other vegetables per week.</i>
 </p>
+</details>
 
 
 
-    <p>
-    <h2>Additional Quotes</h2>
-    <p>Specific references to <b>Cabbage, red</b> throughout Geoff Bond's publications.</p>
     
-    <p>
-        <i>Being a World War II baby, I spent the first fifteen years of my life on food rations. It is said that we are the "lucky" generation: Many unhealthy foods like sugar, bacon, pork, beef, milk, butter, fat, cakes, and even bread were strictly rationed. Meanwhile, we could eat as much as we liked of cabbage, onions, and turnips!</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.9
-    </p>
-    
-    <p>
-        <i>With regard to plant food, it is always best to eat it as soon as possible after harvesting and to eat it raw. That is why we put the emphasis on the consumption of salads and for them to be as fresh as possible. Be imaginative—many vegetables can form part of a mixed salad, including chopped broccoli, cauliflower, cabbage, zucchini, and leeks.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.91
-    </p>
-    
-    <p>
-        <i>Wild leaves typically have a high percentage of indigestible cell wall material, up to 35%. It is almost entirely the types of soluble fiber called "unlignified hemicelluloses and cellulose." Such fiber is common in dicot vegetables. The human gut is good at degrading this type of fiber, which is found in carrots and cabbage, for example. The human gut is much less efficient at degrading the fiber from monocot plants, such as wheat bran.</i>
- ~<a href="../../../about.html">Deadly Harvest</a> p.126
-    </p>
-    
+<h2>Additional Quotes</h2>
+<p>Specific references to <b>Cabbage, red</b> throughout Geoff Bond's publications.</p>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-9-wwii">Paleo in a Nutshell — 1. Origin and Main Features, p. 9</a></summary>
+    <p><i>Being a World War II baby, I spent the first fifteen years of my life on food rations. It is said that we are the "lucky" generation: Many unhealthy foods like sugar, bacon, pork, beef, milk, butter, fat, cakes, and even bread were strictly rationed. Meanwhile, we could eat as much as we liked of cabbage, onions, and turnips!</i>
 </p>
+</details>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-91-salad">Paleo in a Nutshell — 5. Adopting the Paleo Feeding Pattern, p. 91</a></summary>
+    <p><i>With regard to plant food, it is always best to eat it as soon as possible after harvesting and to eat it raw. That is why we put the emphasis on the consumption of salads and for them to be as fresh as possible. Be imaginative—many vegetables can form part of a mixed salad, including chopped broccoli, cauliflower, cabbage, zucchini, and leeks.</i>
+</p>
+</details>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#dh-126-fiber">Deadly Harvest — 5. The Science II: Digestive System and Dietary Clues, p. 126</a></summary>
+    <p><i>Wild leaves typically have a high percentage of indigestible cell wall material, up to 35%. It is almost entirely the types of soluble fiber called "unlignified hemicelluloses and cellulose." Such fiber is common in dicot vegetables. The human gut is good at degrading this type of fiber, which is found in carrots and cabbage, for example. The human gut is much less efficient at degrading the fiber from monocot plants, such as wheat bran.</i>
+</p>
+</details>
+
+
 
 
     
@@ -77,7 +107,7 @@
 
         <footer class="ui segment">
             <div class="ui text center aligned container">
-            <p>Savanna Model v2.0.5 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
+            <p>Savanna Model v2.0.6 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
             <p>Site proudly generated with
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
             and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>

@@ -6,13 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Savanna Model - Lard</title>
         <link rel="stylesheet" type="text/css" href="../../../../semantic/dist/semantic.min.css">
+        <style>
+            details.quote {
+                margin: 0.5em 0;
+                padding: 0.5em 1em;
+                border: 1px solid rgba(34,36,38,.15);
+                border-radius: .28571429rem;
+            }
+            details.quote > summary.quote-citation {
+                cursor: pointer;
+                font-style: italic;
+            }
+            details.quote[open] > summary.quote-citation {
+                margin-bottom: 0.5em;
+            }
+            .quote-entry .quote-citation {
+                color: rgba(0,0,0,.6);
+                font-style: italic;
+            }
+            .quote-foods {
+                margin-top: 0.5em;
+            }
+            .quote-foods .ui.label {
+                margin-right: 0.3em;
+            }
+        </style>
     </head>
     <body>
         <header class="ui segment">
             <div class="ui container">
-            <div class="ui three item borderless menu">
+            <div class="ui four item borderless menu">
                 <a class="item" href="../../../../">Savanna Model</a>
                 <a class="item" href="../../../../foods.html">Foods</a>
+                <a class="item" href="../../../../sources.html">Sources</a>
                 <a class="item" href="../../../../about.html">About</a>
             </div>
             </div>
@@ -36,21 +62,23 @@
 
 
 
-    <p>
-    <h2>Additional Quotes</h2>
-    <p>Specific references to <b>Lard</b> throughout Geoff Bond's publications.</p>
     
-    <p>
-        <i>As a rule of thumb, oils that are solid at room temperature are suspect, as they are almost certainly unhealthy saturated fats. Examples are butter, lard (including bacon fat) ...</i>
- ~<a href="../../../../about.html">Paleo in a Nutshell</a> p.73
-    </p>
-    
-    <p>
-        <i>It was not until a few thousand years ago that domesticated animals, notably the pig, were bred porky enough to yield a fat that could be separated out. This kind of fat is lard, whereas fat from cows and sheep is known as tallow. Even so, it was only in certain places and certain levels of prosperity that farming peoples had the luxury of free animal fat in cooking. Traditionally, Chinese, Indian, and Japanese cooking is done with water, not fat.</i>
- ~<a href="../../../../about.html">Deadly Harvest</a> p.68
-    </p>
-    
+<h2>Additional Quotes</h2>
+<p>Specific references to <b>Lard</b> throughout Geoff Bond's publications.</p>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../../sources.html#pian-73-rule-of-thumb-oils">Paleo in a Nutshell — 4. The Owner's Manual, p. 73</a></summary>
+    <p><i>As a rule of thumb, oils that are solid at room temperature are suspect, as they are almost certainly unhealthy saturated fats. Examples are butter, lard (including bacon fat) ...</i>
 </p>
+</details>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../../sources.html#dh-68-domesticated-animals-history">Deadly Harvest — 3. How We Eat and Its Consequences, p. 68</a></summary>
+    <p><i>It was not until a few thousand years ago that domesticated animals, notably the pig, were bred porky enough to yield a fat that could be separated out. This kind of fat is lard, whereas fat from cows and sheep is known as tallow. Even so, it was only in certain places and certain levels of prosperity that farming peoples had the luxury of free animal fat in cooking. Traditionally, Chinese, Indian, and Japanese cooking is done with water, not fat.</i>
+</p>
+</details>
+
+
 
 
     
@@ -63,7 +91,7 @@
 
         <footer class="ui segment">
             <div class="ui text center aligned container">
-            <p>Savanna Model v2.0.5 — see the <a href="../../../../changelog.html">changelog</a> for what changed.</p>
+            <p>Savanna Model v2.0.6 — see the <a href="../../../../changelog.html">changelog</a> for what changed.</p>
             <p>Site proudly generated with
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
             and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>

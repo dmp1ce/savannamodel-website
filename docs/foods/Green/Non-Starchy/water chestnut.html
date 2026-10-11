@@ -6,13 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Savanna Model - Water chestnut</title>
         <link rel="stylesheet" type="text/css" href="../../../semantic/dist/semantic.min.css">
+        <style>
+            details.quote {
+                margin: 0.5em 0;
+                padding: 0.5em 1em;
+                border: 1px solid rgba(34,36,38,.15);
+                border-radius: .28571429rem;
+            }
+            details.quote > summary.quote-citation {
+                cursor: pointer;
+                font-style: italic;
+            }
+            details.quote[open] > summary.quote-citation {
+                margin-bottom: 0.5em;
+            }
+            .quote-entry .quote-citation {
+                color: rgba(0,0,0,.6);
+                font-style: italic;
+            }
+            .quote-foods {
+                margin-top: 0.5em;
+            }
+            .quote-foods .ui.label {
+                margin-right: 0.3em;
+            }
+        </style>
     </head>
     <body>
         <header class="ui segment">
             <div class="ui container">
-            <div class="ui three item borderless menu">
+            <div class="ui four item borderless menu">
                 <a class="item" href="../../../">Savanna Model</a>
                 <a class="item" href="../../../foods.html">Foods</a>
+                <a class="item" href="../../../sources.html">Sources</a>
                 <a class="item" href="../../../about.html">About</a>
             </div>
             </div>
@@ -38,23 +64,25 @@
 <h2>Category Quotes</h2>
 <p>Guideline related quotes related to <b>Non-Starchy and Green</b> throughout Geoff Bond's publications.</p>
 
-<p>
-    <i>Eat at least 2 3/4 lbs of mixed salad and vegetables per day, consisting of "Green-Green” and “Green” foods. Of these, at least 3/4 lb should be mixed salad. Also include at least 5 cups of “Green-Green” leafy vegetables or 2 1/2 cups of other vegetables per week.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.102
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-102-green-salad">Paleo in a Nutshell — 5. Adopting the Paleo Feeding Pattern, p. 102</a></summary>
+    <p><i>Eat at least 2 3/4 lbs of mixed salad and vegetables per day, consisting of "Green-Green” and “Green” foods. Of these, at least 3/4 lb should be mixed salad. Also include at least 5 cups of “Green-Green” leafy vegetables or 2 1/2 cups of other vegetables per week.</i>
 </p>
+</details>
 
 
 
-    <p>
-    <h2>Additional Quotes</h2>
-    <p>Specific references to <b>Water chestnut</b> throughout Geoff Bond's publications.</p>
     
-    <p>
-        <i>Not all underground vegetables are starchy. For example, turnip and radish, which both originated in Asia, are non-starchy, as are bulbs such as onion and garlic from Asia and the leek from the Middle East. Corms such as Chinese water chestnut are also non-starchy. Unlike the starchy roots, they mostly get their bulk from another com pound called "inulin."</i>
- ~<a href="../../../about.html">Deadly Harvest</a> p.56
-    </p>
-    
+<h2>Additional Quotes</h2>
+<p>Specific references to <b>Water chestnut</b> throughout Geoff Bond's publications.</p>
+
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#dh-56-underground-non-starchy">Deadly Harvest — 3. How We Eat and Its Consequences, p. 56</a></summary>
+    <p><i>Not all underground vegetables are starchy. For example, turnip and radish, which both originated in Asia, are non-starchy, as are bulbs such as onion and garlic from Asia and the leek from the Middle East. Corms such as Chinese water chestnut are also non-starchy. Unlike the starchy roots, they mostly get their bulk from another com pound called "inulin."</i>
 </p>
+</details>
+
+
 
 
     
@@ -67,7 +95,7 @@
 
         <footer class="ui segment">
             <div class="ui text center aligned container">
-            <p>Savanna Model v2.0.5 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
+            <p>Savanna Model v2.0.6 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
             <p>Site proudly generated with
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
             and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>

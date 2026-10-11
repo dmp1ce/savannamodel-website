@@ -6,13 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Savanna Model - Unsweetened, fresh cranberry</title>
         <link rel="stylesheet" type="text/css" href="../../../semantic/dist/semantic.min.css">
+        <style>
+            details.quote {
+                margin: 0.5em 0;
+                padding: 0.5em 1em;
+                border: 1px solid rgba(34,36,38,.15);
+                border-radius: .28571429rem;
+            }
+            details.quote > summary.quote-citation {
+                cursor: pointer;
+                font-style: italic;
+            }
+            details.quote[open] > summary.quote-citation {
+                margin-bottom: 0.5em;
+            }
+            .quote-entry .quote-citation {
+                color: rgba(0,0,0,.6);
+                font-style: italic;
+            }
+            .quote-foods {
+                margin-top: 0.5em;
+            }
+            .quote-foods .ui.label {
+                margin-right: 0.3em;
+            }
+        </style>
     </head>
     <body>
         <header class="ui segment">
             <div class="ui container">
-            <div class="ui three item borderless menu">
+            <div class="ui four item borderless menu">
                 <a class="item" href="../../../">Savanna Model</a>
                 <a class="item" href="../../../foods.html">Foods</a>
+                <a class="item" href="../../../sources.html">Sources</a>
                 <a class="item" href="../../../about.html">About</a>
             </div>
             </div>
@@ -38,15 +64,17 @@
 <h2>Category Quotes</h2>
 <p>Guideline related quotes related to <b>Fruits-Low-Fructose-Low-Glycemic and Green</b> throughout Geoff Bond's publications.</p>
 
-<p>
-    <i>Eat at least six pieces (servings) of fruit per day, focusing on “Green” and “Green-Amber” fruits.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.102
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-102-stage3-group4-six-servings-fruit">Paleo in a Nutshell — 5. Adopting the Paleo Feeding Pattern, p. 102</a></summary>
+    <p><i>Eat at least six pieces (servings) of fruit per day, focusing on “Green” and “Green-Amber” fruits.</i>
 </p>
+</details>
 
-<p>
-    <i>Restrict total fruits consumption per session to three servings.</i>
- ~<a href="../../../about.html">Paleo in a Nutshell</a> p.102
+<details class="quote">
+    <summary class="quote-citation"><a href="../../../sources.html#pian-102-stage3-group4-restrict-servings-per-session">Paleo in a Nutshell — 5. Adopting the Paleo Feeding Pattern, p. 102</a></summary>
+    <p><i>Restrict total fruits consumption per session to three servings.</i>
 </p>
+</details>
 
 
 
@@ -63,7 +91,7 @@
 
         <footer class="ui segment">
             <div class="ui text center aligned container">
-            <p>Savanna Model v2.0.5 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
+            <p>Savanna Model v2.0.6 — see the <a href="../../../changelog.html">changelog</a> for what changed.</p>
             <p>Site proudly generated with
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>
             and using <a href="https://fomantic-ui.com/">Fomantic UI</a>.</p>
