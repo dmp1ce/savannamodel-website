@@ -66,8 +66,17 @@
 <p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>
 and versions follow <a href="https://semver.org/">Semantic Versioning</a>: MAJOR for
 redesigns, MINOR for new features, PATCH for fixes and content updates.</p>
-<h2 id="section">[2.0.15] - 2026-10-20</h2>
+<h2 id="section">[2.0.16] - 2026-10-20</h2>
 <h3 id="changed">Changed</h3>
+<ul>
+<li>98 more food pages now show quotes, through 100 curated alias tag
+mappings on 125 quote passages (varieties inherit their base food’s
+quotes: breads←bread, coffees←coffee, sugars←sugar, wines←wine,
+honeys←honey, waters←water, and so on). Quote-less food pages drop
+from 291 to 193.</li>
+</ul>
+<h2 id="section-1">[2.0.15] - 2026-10-20</h2>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>All 306 remaining food list pages now render properly with title,
 quote linkage and an illustration. Every page got front matter (title
@@ -85,8 +94,8 @@ books.</li>
 <li>All 499 food page images verified live (HTTP 200) and the full site
 link-checked: 515 pages, zero broken internal links.</li>
 </ul>
-<h2 id="section-1">[2.0.14] - 2026-10-19</h2>
-<h3 id="changed-1">Changed</h3>
+<h2 id="section-2">[2.0.14] - 2026-10-19</h2>
+<h3 id="changed-2">Changed</h3>
 <ul>
 <li>Every food page now has an illustration. Added missing images to 50+
 pages (fish oils, game meats, exotic meats, eggs, nuts, beverages and
@@ -99,7 +108,7 @@ alias tag mappings (waters→water, salmon-oil→salmon, bok-choy→cabbage,
 green-onion→onion and more). Remaining 41 gaps documented in a review
 list for category-mapping decisions.</li>
 </ul>
-<h2 id="section-2">[2.0.13] - 2026-10-17</h2>
+<h2 id="section-3">[2.0.13] - 2026-10-17</h2>
 <h3 id="added">Added</h3>
 <ul>
 <li>“Ask a question” AI assistant on the FAQ page. The assistant answers
@@ -109,7 +118,7 @@ are answered by GLM 5.3 Flash routed through private, encrypted
 model providers — no advertising, no data mining. Not medical
 advice, as always.</li>
 </ul>
-<h2 id="section-3">[2.0.12] - 2026-10-13</h2>
+<h2 id="section-4">[2.0.12] - 2026-10-13</h2>
 <h3 id="added-1">Added</h3>
 <ul>
 <li>FAQ page (new “FAQ” nav item): 32 reader questions answered by Geoff
@@ -120,7 +129,7 @@ Sugar &amp; Sweeteners, Grains &amp; Breads, Dairy, Fruits &amp; Vegetables).
 Every answer is verbatim with an issue citation and is searchable
 via the site search. Published with Geoff Bond’s permission.</li>
 </ul>
-<h2 id="section-4">[2.0.11] - 2026-10-11</h2>
+<h2 id="section-5">[2.0.11] - 2026-10-11</h2>
 <h3 id="added-2">Added</h3>
 <ul>
 <li>Site search (new “Search” nav item): a client-side full-text
@@ -130,13 +139,13 @@ in CI and shipped with the site — search runs entirely in the
 browser with no external calls. This is the site’s first
 JavaScript, loaded only on the search page.</li>
 </ul>
-<h2 id="section-5">[2.0.10] - 2026-10-11</h2>
+<h2 id="section-6">[2.0.10] - 2026-10-11</h2>
 <h3 id="added-3">Added</h3>
 <ul>
 <li>Site favicon: a traffic-light icon (green/amber/red — the food-tier
 motif) in SVG, ICO, PNG, and apple-touch-icon form.</li>
 </ul>
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 <ul>
 <li><code>chocolate "drinks"</code> food page renamed to <code>chocolate drinks</code>,
 matching the book’s wording.</li>
@@ -148,7 +157,7 @@ are correctly cited (page-span quotations are cited at their start
 page, and the “duplicate” sentences genuinely appear on p. 102’s
 Stage 3 tables). No citations changed.</li>
 </ul>
-<h2 id="section-6">[2.0.9] - 2026-10-11</h2>
+<h2 id="section-7">[2.0.9] - 2026-10-11</h2>
 <h3 id="added-4">Added</h3>
 <ul>
 <li>29 new food pages from a systematic audit of the <em>Paleo in a
@@ -164,7 +173,7 @@ Fats (Yellow-Red).</li>
 a title (matching how the site renders them) instead of shipping an
 empty name.</li>
 </ul>
-<h2 id="section-7">[2.0.8] - 2026-10-11</h2>
+<h2 id="section-8">[2.0.8] - 2026-10-11</h2>
 <h3 id="added-5">Added</h3>
 <ul>
 <li>Machine-readable data feeds for a future native app: <code>/data/foods.json</code>
@@ -172,15 +181,15 @@ empty name.</li>
 <code>/data/quotes.json</code> (book, chapter, page, tags, body, and a stable
 link into the Sources page for every quote).</li>
 </ul>
-<h2 id="section-8">[2.0.7] - 2026-10-11</h2>
-<h3 id="changed-3">Changed</h3>
+<h2 id="section-9">[2.0.7] - 2026-10-11</h2>
+<h3 id="changed-4">Changed</h3>
 <ul>
 <li>The Sources page is now a compact index: one line per quote (page
 number + food links) instead of the full passages, which are already
 shown on the food pages. Removed from the nav menu; reachable via a
 footer link and the per-quote citations.</li>
 </ul>
-<h2 id="section-9">[2.0.6] - 2026-10-11</h2>
+<h2 id="section-10">[2.0.6] - 2026-10-11</h2>
 <h3 id="added-6">Added</h3>
 <ul>
 <li>New <strong>Sources</strong> page: every one of the 309 quotes from Geoff Bond’s
@@ -200,7 +209,7 @@ it is actually from <em>Paleo in a Nutshell</em> p. 123 (now
 <code>pian-123-cretan-breakfast</code>). <code>quote-check</code> now also fails if it
 finds any non-<code>.html</code> file in <code>quotes/</code>.</li>
 </ul>
-<h2 id="section-10">[2.0.5] - 2026-10-11</h2>
+<h2 id="section-11">[2.0.5] - 2026-10-11</h2>
 <h3 id="fixed-2">Fixed</h3>
 <ul>
 <li>Three quote citations pointed at the wrong page: the two Stage 3 meat
@@ -217,7 +226,7 @@ site’s own Hakyll metadata parsing (known book, numeric page,
 non-empty body). Runs in CI before the site build, so a malformed
 quote can never deploy silently.</li>
 </ul>
-<h2 id="section-11">[2.0.4] - 2026-09-15</h2>
+<h2 id="section-12">[2.0.4] - 2026-09-15</h2>
 <h3 id="fixed-3">Fixed</h3>
 <ul>
 <li>29 more food pages still had broken <code>1024px</code> Wikimedia thumbnails. The
@@ -226,7 +235,7 @@ silently skipping the ones the audit flagged as <em>fixable</em> (broken size
 but a working standard size exists). All rewritten to working sizes,
 and the resolver now processes fixable entries too.</li>
 </ul>
-<h2 id="section-12">[2.0.3] - 2026-09-15</h2>
+<h2 id="section-13">[2.0.3] - 2026-09-15</h2>
 <h3 id="fixed-4">Fixed</h3>
 <ul>
 <li>The eight food pages written as Markdown (<code>.md</code>) were missed by the
@@ -235,7 +244,7 @@ Brussels sprouts, broccoli, cabbages, Swiss chard, beet greens
 (image removed: dead hotlink), eggs, and lard. The audit tooling now
 scans <code>*.md</code> as well as <code>*.html</code>.</li>
 </ul>
-<h2 id="section-13">[2.0.2] - 2026-09-14</h2>
+<h2 id="section-14">[2.0.2] - 2026-09-14</h2>
 <h3 id="fixed-5">Fixed</h3>
 <ul>
 <li>Food page images: Wikimedia Commons now only serves standardized
@@ -250,7 +259,7 @@ Internal links are blocking; external checks are report-only since
 Wikimedia rate-limits datacenter IPs.</li>
 <li>Removed 6 dead image attribution links (image_source) to 404/403 pages.</li>
 </ul>
-<h2 id="section-14">[2.0.1] - 2026-09-13</h2>
+<h2 id="section-15">[2.0.1] - 2026-09-13</h2>
 <h3 id="fixed-6">Fixed</h3>
 <ul>
 <li>Corrected 15 quote citations (11 wrong page numbers, 4 attributed to the
@@ -258,7 +267,7 @@ wrong book) using automated verification of every quote against the
 extracted text of both books. A handful of quotes that span a page break
 remain flagged for manual review in the builder workspace.</li>
 </ul>
-<h2 id="section-15">[2.0.0] - 2026-09-13</h2>
+<h2 id="section-16">[2.0.0] - 2026-09-13</h2>
 <h3 id="added-8">Added</h3>
 <ul>
 <li>This changelog page, linked from the site footer.</li>
@@ -268,7 +277,7 @@ the <a href="https://github.com/dmp1ce/savannamodel-hakyll">builder repository</
 builds and publishes the site automatically via GitHub Actions.</li>
 <li>Automated <code>package-lock.json</code> regeneration as part of deployment.</li>
 </ul>
-<h3 id="changed-4">Changed</h3>
+<h3 id="changed-5">Changed</h3>
 <ul>
 <li>Upgraded Hakyll from 4.12.5.2 to 4.17.0.0 (Stackage LTS 24.58, GHC 9.10.3).</li>
 <li>Upgraded Fomantic UI (Semantic UI) from 2.8.4 to 2.9.4.</li>
@@ -280,7 +289,7 @@ builds and publishes the site automatically via GitHub Actions.</li>
 now live: new foods (pineapple, watermelon, tahini) with quotes, and
 low-fructose high-glycemic fruits moved from Green-Yellow to Yellow.</li>
 </ul>
-<h2 id="section-16">[1.0.0] - 2018-10-21</h2>
+<h2 id="section-17">[1.0.0] - 2018-10-21</h2>
 <ul>
 <li>Initial Hakyll-based website for the Savanna Model lifestyle, based on
 Geoff Bond’s <em>Deadly Harvest</em> and <em>Paleo in a Nutshell</em>.</li>
